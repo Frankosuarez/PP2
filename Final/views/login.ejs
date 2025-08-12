@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="../assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.122.0">
+    <title> LOGIN </title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/sign-in.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body class="d-flex align-items-center py-4 bg-body-tertiary">
+
+<main class="form-signin text-center shadow-lg p-5 mb-5">
+  <form id ="formLogin" action="/login" method="POST" >
+    <img class="mb-4" src="img/ISFT.png" alt="" width="72" height="57">
+    <h1 class="h3 mb-3 fw-normal">LOGIN</h1>
+
+    <div class="form-floating">
+      <input type="text" class="form-control" id="user" name="user" placeholder="User">
+      <label for="user">User</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control" id="pass" name="pass" placeholder="Password">
+      <label for="pass">Password</label>
+    </div>
+
+    <div class="form-check text-start my-3">
+    </div>
+    <button class="btn btn-bd-primary w-100 py-2" type="submit">Login</button>
+    
+
+  </form>
+
+  <br>
+  <a href="/register"  button class="btn btn-primary w-100 py-2" type="submit">Registrarse</a>
+
+</main>
+
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<% if(alert) { %>
+  <script>
+    swal.fire({
+      title: "<%= alertTitle %>",
+      text: "<%= alertMessage %>",
+      icon: "<%= alertIcon %>",
+      showConfirmButton: <%= showConfirmButton %>, 
+      timer: <%= timer %> 
+    }).then(() =>{
+      window.location = "/<%= ruta %>" 
+    })
+  </script>
+<% } %>
+
+
+    </body>
+</html>

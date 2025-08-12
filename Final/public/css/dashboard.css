@@ -1,0 +1,63 @@
+
+.bi {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+@media (min-width: 768px) {
+  .sidebar .offcanvas-lg {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 48px;
+   
+  }
+  .navbar-search {
+    display: block;
+  }
+}
+
+.sidebar .nav-link {
+  font-size: .875rem;
+  font-weight: 500;
+  color: #050303d1;
+}
+
+.sidebar .nav-link.active {
+  color: #24dc2a;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+}
+
+.sidebar .nav-link:hover {
+  color: #2dd114;
+}
+
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+  background-color: #040608; 
+}
+
+.navbar .form-control {
+  padding: .75rem 1rem;
+}
+
+.btn-primary{
+  background-color: #2dd114;
+  border-color:#2ed614;
+}
+.btn-primary:hover{
+  background-color: rgba(0, 128, 0, 0.852);
+  border-color:#2dd114;
+}
+
+.sidebar .nav-link {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
